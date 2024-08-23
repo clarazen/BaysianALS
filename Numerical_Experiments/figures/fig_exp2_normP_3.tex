@@ -1,0 +1,102 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.60784,0.74902,0.73725}%
+\definecolor{mycolor2}{rgb}{0.01176,0.50196,0.58431}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\fwidth,
+height=0.75\fwidth,
+at={(0\fwidth,0\fwidth)},
+scale only axis,
+xmin=1,
+xmax=20,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of iterations},
+ymin=40.1454881644106,
+ymax=1540.14548816441,
+ylabel style={font=\color{white!15!black}},
+ylabel={$||\mathbf{P}_3||_\mathrm{F}$},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=mycolor1]
+table[row sep=crcr] {%
+x	y\\
+1	177023578.168957\\
+2	957.0284467497\\
+3	645.045102124702\\
+4	596.947969514599\\
+5	573.450395708042\\
+6	558.600961883994\\
+7	556.328003794033\\
+8	554.701554713727\\
+9	553.0364488109\\
+10	551.71505603283\\
+11	550.87077034611\\
+12	550.515009098917\\
+13	550.544790632084\\
+14	549.95808031886\\
+15	549.781082273484\\
+16	549.214210643099\\
+17	549.48838990772\\
+18	549.044681499803\\
+19	549.399449297175\\
+20	549.278422432715\\
+20	526.856938040262\\
+19	526.775122296917\\
+18	527.313676742571\\
+17	526.846976457114\\
+16	527.334973143791\\
+15	526.834497174163\\
+14	527.00350381309\\
+13	526.516136834223\\
+12	526.588346409571\\
+11	526.273263416557\\
+10	525.502737481507\\
+9	524.304789375108\\
+8	522.841065299734\\
+7	521.586415240738\\
+6	520.663607646951\\
+5	511.627572605496\\
+4	504.269155465192\\
+3	502.597307757744\\
+2	466.76948787526\\
+1	-60204432.7814972\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=mycolor2, line width=1.0pt]
+  table[row sep=crcr]{%
+1.99998325174465	1690.14548817277\\
+2	711.89896731248\\
+3	573.821204941223\\
+4	550.608562489895\\
+5	542.538984156769\\
+6	539.632284765472\\
+7	538.957209517386\\
+8	538.771310006731\\
+9	538.670619093004\\
+10	538.608896757168\\
+11	538.572016881334\\
+13	538.530463733154\\
+14	538.480792065975\\
+15	538.307789723824\\
+16	538.274591893445\\
+17	538.167683182417\\
+18	538.179179121187\\
+19	538.087285797046\\
+20	538.067680236489\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+\end{tikzpicture}%

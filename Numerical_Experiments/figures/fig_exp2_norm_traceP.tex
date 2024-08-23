@@ -1,0 +1,105 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.60784,0.74902,0.73725}%
+\definecolor{mycolor2}{rgb}{0.01176,0.50196,0.58431}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=1.952in,
+height=3.566in,
+at={(0.758in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=5,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of iterations},
+ymode=log,
+ymin=0.01,
+ymax=1000000,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={$\mathrm{tr}(\mathbf{P}_\mathrm{UT})$},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=mycolor1]
+table[row sep=crcr] {%
+x	y\\
+1	162275.388160692\\
+2	11533.1674974475\\
+3	10765.8449600642\\
+4	10561.8241394912\\
+5	10519.8673231031\\
+5	10418.6485494752\\
+4	10411.1393942641\\
+3	10330.301303268\\
+2	10241.0662727897\\
+1	0.01\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=mycolor2, line width=1.0pt]
+  table[row sep=crcr]{%
+1	63134.0509357772\\
+2	10887.1168851186\\
+3	10548.0731316661\\
+4	10486.4817668776\\
+5	10469.2579362892\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+
+\begin{axis}[%
+width=1.952in,
+height=3.566in,
+at={(3.327in,0.481in)},
+scale only axis,
+xmin=1,
+xmax=5,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of iterations},
+ymode=log,
+ymin=0.01,
+ymax=100000,
+yminorticks=true,
+ylabel style={font=\color{white!15!black}},
+ylabel={$||\mathbf{P}_\mathrm{UT}||_\mathrm{F}$},
+axis background/.style={fill=white},
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=mycolor1]
+table[row sep=crcr] {%
+x	y\\
+1	60807.9040626897\\
+2	1712.53421784249\\
+3	1557.46644088027\\
+4	1521.5108444637\\
+5	1513.12241680125\\
+5	1496.63988531634\\
+4	1494.50494518111\\
+3	1480.79154538019\\
+2	1456.71404336698\\
+1	0.01\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=mycolor2, line width=1.0pt]
+  table[row sep=crcr]{%
+1	21168.6542103251\\
+2	1584.62413060473\\
+3	1519.12899313023\\
+4	1508.00789482241\\
+5	1504.88115105879\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+\end{tikzpicture}%

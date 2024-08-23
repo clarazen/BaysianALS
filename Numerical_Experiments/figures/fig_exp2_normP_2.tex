@@ -1,0 +1,103 @@
+% This file was created by matlab2tikz.
+%
+%The latest updates can be retrieved from
+%  http://www.mathworks.com/matlabcentral/fileexchange/22022-matlab2tikz-matlab2tikz
+%where you can also make suggestions and rate matlab2tikz.
+%
+\definecolor{mycolor1}{rgb}{0.60784,0.74902,0.73725}%
+\definecolor{mycolor2}{rgb}{0.01176,0.50196,0.58431}%
+%
+\begin{tikzpicture}
+
+\begin{axis}[%
+width=0.951\fwidth,
+height=0.75\fwidth,
+at={(0\fwidth,0\fwidth)},
+scale only axis,
+xmin=1,
+xmax=20,
+xlabel style={font=\color{white!15!black}},
+xlabel={Number of iterations},
+ymin=436.640555005448,
+ymax=1936.64055500545,
+ylabel style={font=\color{white!15!black}},
+ylabel={$||\mathbf{P}_2||_\mathrm{F}$},
+axis background/.style={fill=white},
+axis x line*=bottom,
+axis y line*=left,
+legend style={legend cell align=left, align=left, draw=white!15!black}
+]
+
+\addplot[area legend, draw=none, fill=mycolor1]
+table[row sep=crcr] {%
+x	y\\
+1	1654.15801016324\\
+2	1125.25442572812\\
+3	1004.80683694189\\
+4	995.141301617852\\
+5	990.090874390746\\
+6	982.815783646402\\
+7	974.738790483238\\
+8	965.223324339939\\
+9	958.338817569146\\
+10	955.699428867709\\
+11	955.219034194049\\
+12	955.190323145843\\
+13	955.092431577418\\
+14	955.122470842804\\
+15	954.765233367831\\
+16	954.853361444929\\
+17	954.499058929109\\
+18	954.62356888353\\
+19	954.280591546826\\
+20	954.202283551178\\
+20	923.364572995825\\
+19	923.300019503839\\
+18	922.873644169245\\
+17	923.126398465392\\
+16	922.706215584054\\
+15	922.941195230844\\
+14	922.601020266737\\
+13	922.86540952514\\
+12	922.95099303892\\
+11	923.171825143061\\
+10	923.116139217032\\
+9	921.241699316786\\
+8	915.601850629368\\
+7	907.521502825066\\
+6	900.967112887531\\
+5	896.861322753453\\
+4	897.054086584954\\
+3	904.541757883045\\
+2	871.453473890369\\
+1	810.491510889114\\
+}--cycle;
+\addlegendentry{data1}
+
+\addplot [color=mycolor2, line width=1.0pt]
+  table[row sep=crcr]{%
+1	1232.32476052618\\
+2	998.353949809246\\
+3	954.674297412468\\
+4	946.097694101403\\
+5	943.4760985721\\
+6	941.891448266967\\
+7	941.130146654152\\
+8	940.412587484654\\
+9	939.790258442966\\
+10	939.40778404237\\
+11	939.195429668555\\
+12	939.070658092381\\
+13	938.978920551279\\
+14	938.861745554771\\
+15	938.853214299337\\
+16	938.779788514491\\
+17	938.812728697251\\
+18	938.748606526387\\
+19	938.790305525333\\
+20	938.783428273501\\
+};
+\addlegendentry{data2}
+
+\end{axis}
+\end{tikzpicture}%
